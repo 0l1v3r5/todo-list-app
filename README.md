@@ -12,6 +12,6 @@
 
 5. Now run 'npm start' to run the server defined in index.js file. this will run application in 8000 port defined in index.js.
 
-6. Now visit "localhost:8000".
+6. Now visit "http://localhost:8000".
 
 Here Add, and Delete Operations are done.
