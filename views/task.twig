@@ -1,0 +1,43 @@
+{% extends 'base.twig' %}
+
+{% block title %}Add new task{% endblock %}
+
+{% block body %}
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <br><br>
+        <form class="" action="/task/add" method="post">
+          <div class="form-group">
+            <label for="new_task">Content</label>
+            <input type="text" class="form-control" name="new_task" id="new_task" autofocus placeholder="Add new task"/>
+          </div>
+          <button type="submit" class="btn btn-block btn-primary">Submit</button>
+        </form>
+        <br><br>
+      </div>
+      <div class="col-sm-12">
+        <div class="row">
+          {% for task in taskslists %}
+            <div class="col-sm-3">
+              <div class="card">
+                <div class="card-body">
+                  <p class="card-text">{{ task }}</p>
+                  <a href="/task/delete/:id" class="btn btn-block btn-primary">Delete</a>
+                </div>
+              </div>
+            </div>
+          {% else %}
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-body" style="background: #d1ecf1;">
+                  <p class="card-text">No Tasks</p>
+                </div>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

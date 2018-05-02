@@ -1,0 +1,31 @@
+{
+  "name": "todo-list-app",
+  "version": "0.1.0",
+  "description": "A simple todo list application with Express framework",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0l1v3r5/todo-list-app.git"
+  },
+  "keywords": [
+    "expressjs",
+    "nodejs"
+  ],
+  "author": "0l1v3r5",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/0l1v3r5/todo-list-app/issues"
+  },
+  "homepage": "https://github.com/0l1v3r5/todo-list-app#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cookie-session": "^2.0.0-beta.3",
+    "express": "^4.16.3",
+    "express-ejs-extend": "0.0.1",
+    "mysql": "^2.15.0",
+    "twig": "^1.11.0"
+  }
+}
