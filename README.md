@@ -15,3 +15,15 @@
 6. Now visit "http://localhost:8000".
 
 Here Add, and Delete Operations are done.
+
+## Coming soon
+
+1. Editing Task
+
+2. Assigning a priority and a deadline
+
+3. Persistence of the todolist (storage in a database or a NoSQL database)
+
+4. Sharing a todolist between several people
+
+5. Synchronization of todolist in real time between people without needing to reload the page
